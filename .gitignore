@@ -1,0 +1,6 @@
+/vendor/
+/data/*.sqlite
+/storage/generated/*
+!/storage/generated/.gitkeep
+/tmp/
+.DS_Store

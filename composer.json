@@ -1,0 +1,14 @@
+{
+  "name": "cmr/local-cmr-tool",
+  "description": "Simple CMR invultool met SQLite en PDF generatie",
+  "type": "project",
+  "require": {
+    "setasign/fpdf": "^1.8",
+    "setasign/fpdi": "^2.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  }
+}
