@@ -1,5 +1,6 @@
 {
   "name": "cmr/local-cmr-tool",
+  "version": "1.0.0",
   "description": "Simple CMR invultool met SQLite en PDF generatie",
   "type": "project",
   "require": {

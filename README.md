@@ -25,6 +25,34 @@ Open daarna:
 - Archief: [http://localhost:8080/history.php](http://localhost:8080/history.php)
 - Admin bedrijven: [http://localhost:8080/admin.php](http://localhost:8080/admin.php)
 
+## 1b) Docker / Dockge (aanbevolen)
+
+Deze repository bevat een complete Docker setup met versie `1.0.0`.
+
+Starten met Docker Compose:
+
+```bash
+docker compose up -d --build
+```
+
+Open daarna:
+- [http://localhost:8080/index.php](http://localhost:8080/index.php)
+
+Belangrijke bestanden:
+- `docker-compose.yml`
+- `Dockerfile`
+- `.dockerignore`
+- `VERSION`
+
+Voor Dockge:
+1. Voeg een nieuwe stack toe met de inhoud van `docker-compose.yml`.
+2. Deploy de stack.
+3. Zorg dat poort `8080` vrij is of pas de host-poort aan.
+
+Persistente data volumes:
+- `cmr_data` voor databasebestanden in `data/`
+- `cmr_generated` voor gegenereerde PDF's in `storage/generated/`
+
 ## 2) Gebruik
 
 1. Voeg in `Admin` eerst je eigen bedrijven toe als `Afzender`.

@@ -1,0 +1,27 @@
+services:
+  cmr:
+    build:
+      context: .
+      args:
+        APP_VERSION: "1.0.0"
+    image: monomo71/cmr:1.0.0
+    container_name: cmr
+    ports:
+      - "8080:80"
+    environment:
+      TZ: Europe/Amsterdam
+      APP_VERSION: "1.0.0"
+    volumes:
+      - cmr_data:/var/www/html/data
+      - cmr_generated:/var/www/html/storage/generated
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://localhost/index.php || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+
+volumes:
+  cmr_data:
+  cmr_generated:

@@ -1,0 +1,8 @@
+.git
+.gitignore
+tmp
+storage/generated/*
+!storage/generated/.gitkeep
+data/*.sqlite
+node_modules
+.DS_Store
