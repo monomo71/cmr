@@ -53,6 +53,11 @@ Persistente data volumes:
 - `cmr_data` voor databasebestanden in `data/`
 - `cmr_generated` voor gegenereerde PDF's in `storage/generated/`
 
+## 1c) Debian 13 VM installatie
+
+Gebruik voor een losse Debian 13 VM het script in `deploy/debian13-setup.sh`.
+De bijbehorende uitleg staat in `deploy/DEBIAN13_INSTALL.md`.
+
 ## 2) Gebruik
 
 1. Voeg in `Admin` eerst je eigen bedrijven toe als `Afzender`.
